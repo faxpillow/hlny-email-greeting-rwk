@@ -1,6 +1,6 @@
-# xmas-email-greeting-rwk
+# lunarnewyrholiday-email-greeting-rwk
 
-Wishing you and yours the best in prosperity health and awesomeness!
+Wishing you and yours the best in prosperity health and awesomeness! 💐💖💝🐇
 
 Best regards
 
