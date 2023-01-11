@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -12,13 +14,14 @@
     <link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+<!--  where is the SEO section oh yeah no one needs -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <title>welcome</title>
 
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
 
 @media (min-width: 576px) { }
@@ -29,8 +32,6 @@
 @include media-breakpoint-down(sm) { ... }
 @include media-breakpoint-down(md) { ... }
 @include media-breakpoint-down(lg) { ... } */
-
-
 
     body {
     background: url("hlnyvideo.mov") no-repeat fixed;
@@ -110,23 +111,58 @@ img {
   height: 100%;
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video 
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(104, 2, 2);
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: rgb(83, 7, 7);
+}
+    
+    */
+
 </style>
 </head>
 
 <body>
 
-  
     <a href="index.html">
         <div id="entry">
             <h2>Lunar New Year 2023 Greetings from <br> The Redwood Group Korea</h2>
-            Wishing you and yours the best in prosperity health and awesomeness! 💐💖💝🐇
-            Best regards
+          <h6> Wishing you and yours the best in prosperity health and awesomeness! 
+        Best regards</h6>
+    <p> 💐💖💝🐇 </p>
         </div>
-    
     </a>
 
     <img src="happylunar23safe.jpg" alt="image" class ="greeting">    <img src="happylunar23filter.jpg" alt="image" class ="greeting">
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 
@@ -141,12 +177,58 @@ img {
     <script src="js/bootstrap.min.js"></script>
 
         <script>
+// Get the video
+var video = document.getElementById("vid");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
         </script>
+
+<video autoplay muted loop id="vid">
+    <source src="hlnyvideo.mov" type="video/mov">
+  </video>
+  
+  <div class="content">
+      <h1></h1>
+
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+
+
 
 </body>
 
-
+<footer>
     <footer class="container-fluid text-center">
     <a href="index.html" title="To Top"></span></a>
+    #add 
+    TIMESTAMPED 12:57:00 EST . 2:12:07 EST 1/11/2023 for 1/21/2023 :D
+    
+    ·
+© 2023 Github Pages faxpillow
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Pricing
+API
+Training
+Contact
+Have a Great Day!
+ ·
+    </footer>
 
 </html>
